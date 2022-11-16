@@ -53,11 +53,16 @@ public class Operators {
         System.out.println("Greater than or equal to: " + (i <= b));
 
         //Logical operators and, or (only boolean values)
-        //Logical AND - &&
+        //Logical AND - && (or)
 
         boolean sun = true;
         boolean dry = false;
         System.out.println("I will go outside: " + (sun&&dry));
+
+        // Logical OR - ||
+        boolean sale = false;
+        boolean rich = false;
+        System.out.println("I will buy IPhone: " + (sale || rich));
 
 
 
