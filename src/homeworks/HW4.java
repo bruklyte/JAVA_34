@@ -36,5 +36,7 @@ If at least one of given numbers is equal to 0, your application should print fa
         } else {
             System.out.println("false");
         }
+//4
+        System.out.println((num1 > 0 && num2 > 0) || (num1 < 0 && num2 < 0));
    }
 }

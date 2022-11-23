@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class HW3 {
     public static void main(String[] args) {
 
-//  somewhere in the range. use one of the metods near 100 , difference between no bigger than 10 - 99 103 - near 100
+
 /*  Write an application, that will read one number from user (of type int) and check, if given number is "near" 100.
     A number is "near" 100 when difference between it and 100 is no bigger than 10.
     Your application should read one number (int) and print false or true on the screen, according to instructions above.*/
@@ -26,7 +26,15 @@ public class HW3 {
         } else {
             System.out.println("false2");
         }
-
+//3 neveikia teisingai bet kazkaip taip galima
+        int dif = Math.abs(100 - num);
+        if (dif <= 10){
+            System.out.println("true3");
+        } else {
+            System.out.println("false3");
+        }
+//4
+        System.out.println(Math.abs(100 - num) <= 10);
 
 
 
