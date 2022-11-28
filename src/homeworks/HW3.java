@@ -26,7 +26,7 @@ public class HW3 {
         } else {
             System.out.println("false2");
         }
-//3 neveikia teisingai bet kazkaip taip galima
+//3
         int dif = Math.abs(100 - num);
         if (dif <= 10){
             System.out.println("true3");

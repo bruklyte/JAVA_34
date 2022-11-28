@@ -1,5 +1,8 @@
 package homeworks;
 
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
 public class HW5 {
     public static void main(String[] args) {
  /*Alex is an owner of grocery store. Among many products he sells,
@@ -24,9 +27,39 @@ Your application should print true or false.*/
 //can he bring this specified amount TRUE or FALSE he cannot
 // hint - use operators
 
-        System.out.println(10/3);  // hint
-        System.out.println(10.0f/3.0f);
+/*        System.out.println(10/3);  // hint
+        System.out.println(10.0f/3.0f);*/
 
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter number of kilos to buy");
+        int num = scanner.nextInt();
+//1
+        int jar1 = 1;
+        int jar7 = 7;
+        int vnt = 6;
+        int i = num/jar7;
+        int j = num - (i*7);
+
+        System.out.println(i);
+        System.out.println(j);
+
+        if (i+j<=vnt){
+            System.out.println(true);
+        }else{
+            System.out.println(false);
+        }
+//3
+        System.out.println((i + j) <=vnt);
+
+//4
+        System.out.println("Please enter number of amountOfJam");
+        int amountOfJam = scanner.nextInt();
+        //Let's calculate how many big jars we need
+        //division / of integer values in Java "cuts" non integer part of the result
+
+        int amountOf7KgJars = amountOfJam / 7;
+        int amountOf1KgJars = amountOfJam % 7;
+        System.out.println(amountOf7KgJars + amountOf1KgJars <=6);
 
 
     }

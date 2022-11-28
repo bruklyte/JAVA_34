@@ -1,7 +1,11 @@
 package basics;
 
+import java.util.Scanner;
+
 public class Loops {
     public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
   //    System.out.println("Hello World!");
 
         int z=1;
@@ -10,7 +14,7 @@ public class Loops {
             z++;
         }
         for (int i = 1; i <= 10; i++){             // i += 1
-            System.out.println(i);
+            System.out.print(i);
         }
 
         int i = 1;
@@ -26,6 +30,15 @@ public class Loops {
             i++;
 
         } while (i <= 10);
+
+
+        int input;
+        do{
+            System.out.println("Please enter number");
+            input = scanner.nextInt();
+            System.out.println(input * 2);
+
+        } while (input != 0);
 
 
 
