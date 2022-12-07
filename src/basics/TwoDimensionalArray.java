@@ -34,13 +34,18 @@ public class TwoDimensionalArray {
            }
            System.out.println(); // kitoje eiluteje spausdina antraja array
        }
+//nested for loop
+
+
+        //i- row
+        //j - colum
 
        //Same thing using nested for-each loops
 
         for(String [] group: dreamCars){
             System.out.println(Arrays.toString(group)); //very fast printing
         }
-
+//nested for each loop
         for(String [] group: dreamCars){
             for (String car: group){
                 System.out.print(car + " ");

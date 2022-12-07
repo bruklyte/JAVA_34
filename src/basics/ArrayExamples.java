@@ -37,7 +37,7 @@ public class ArrayExamples {
             System.out.println("hello car " + car);
         }
 
-        //very fast print of the values
+        //very fast print of the all values
         System.out.println(Arrays.toString(dreamCars));
 
 
