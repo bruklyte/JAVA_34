@@ -7,24 +7,33 @@ import java.util.regex.Pattern;
 
 public class HWzzz {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter a word");
-        String word = scanner.nextLine();
-        word = word.trim();
-        System.out.println("w1: " + word);
-        String reverseWord = "";
 
-        int strLength = word.length();
-
-        for (int i = (strLength - 1); i >=0; i--) {
-            reverseWord = reverseWord + word.charAt(i);
-        }
-
-        if (word.toLowerCase().equals(reverseWord.toLowerCase())) {
-            System.out.println(word + " is a Palindrome.");
-        }
-        else {
-            System.out.println(word + " is not a Palindrome.");
-        }
     }
+    double s1 = 1;
+    double s2 = 2;
+    double s3 = 3;
+    boolean isValid;
+        private boolean isValid (double s1,double s2,double s3){
+            if (s1+s2>s3 && s1+s3>s2 && s2+s3>s1){
+                return true;
+            }else{
+                return false;
+            }
+            //if else - arba tik trumpiau
+            //     return s1+s2>s3 && s1+s3>s2 && s2+s3>s1;
+        }
+
+        public void areaTriangle (double s1, double s2, double s3){
+
+            if(isValid){
+                double p = (s1+s2+s3)/2;
+                double area = Math.sqrt(p*(p-s1)*(p-s2)*(p-s3));
+                System.out.println("Area: " + area);
+            }else{
+                System.out.println("Triangle is not valid");
+            }
+            // return area;
+        }
+
+
 }
