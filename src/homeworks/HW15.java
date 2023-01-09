@@ -1,10 +1,9 @@
 package homeworks;
-
+//Sandra Rimke
 import java.util.Random;
 import java.util.Scanner;
-import java.util.concurrent.ThreadLocalRandom;
 
-public class HWzzz {
+public class HW15 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         char again = 'y';
@@ -18,7 +17,6 @@ public class HWzzz {
             String random = (computer[new Random().nextInt(computer.length)]);
             System.out.println("Second player - Computers choice: " + random);
             String player2 = random;
-        //    Scanner scanner1 = new Scanner(System.in);
 
             if(player1.equals("rock")) {
                 rockPaperScissors(player1, player2);
@@ -71,28 +69,6 @@ public class HWzzz {
 
     }
 
-   /* public static void main(String[] args) {
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("First player - Please enter rock / scissors / paper");
-        String player1 = scanner.nextLine().toLowerCase();
-        System.out.println("Second player - Please enter rock / scissors / paper");
-        String player2 = scanner.nextLine().toLowerCase();
-        rockPaperScissors(player1, player2);
-
-    }
-
-    public static void rockPaperScissors(String player1, String player2) {
-        System.out.println("GAME ON: " + player1 + " VS " + player2);
-        if (player1.equals(player2))
-        {
-            System.out.print("It is a TIE");
-        } else if((player1.equals("rock") && player2.equals("scissors")) || (player1.equals("scissors") && player2.equals("paper")) || (player1.equals("paper") && player2.equals("rock"))) {
-            System.out.println("Player 1 wins");
-        } else {
-            System.out.println("Player 2 wins");
-        }
-
-    }*/
-
 }
+
+

@@ -20,6 +20,16 @@ public class CallingTriangle {
 
         triangle1.areaTriangle(side1,side2,side3);
 
+        //pagal destytoja
+        triangle1.setSide1(side1);
+        triangle1.setSide2(side2);
+        triangle1.setSide3(side3);
+
+        double result = triangle1.areaTriangle();
+        System.out.println("result (pagal destytoja): "+ result);
+
+
+
 
     }
 }

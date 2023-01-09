@@ -40,6 +40,9 @@ public class Triangle {
         }
 
     }*/
+   private boolean isValid(double s1, double s2, double s3) {   //if else - arba tik trumpiau
+       return s1+s2>s3 && s1+s3>s2 && s2+s3>s1;
+   }
 
     public void areaTriangle (double s1, double s2, double s3){
         if(isValid(s1,s2,s3)){
@@ -51,8 +54,19 @@ public class Triangle {
         }
     }
 
-    private boolean isValid(double s1, double s2, double s3) {   //if else - arba tik trumpiau
-        return s1+s2>s3 && s1+s3>s2 && s2+s3>s1;
+
+
+    //dėstytojo
+    public double areaTriangle(){
+        if(isValid(side1,side2,side3)){
+            double halfPer = (side1 + side2 + side3)/2;
+            double area = Math.sqrt(halfPer*(halfPer-side1)*(halfPer*side2)*(halfPer-side3));
+            System.out.println("Triangle area: " + area);
+            return area;
+        }else{
+            System.out.println("Triangle is not valid");
+            return 0;
+        }
     }
 
 }

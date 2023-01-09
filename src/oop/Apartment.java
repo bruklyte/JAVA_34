@@ -1,5 +1,5 @@
 package oop;
-
+//multipal custom constructors
 public class Apartment {
     private int numberOfRooms;
     private int floor;
