@@ -39,7 +39,7 @@ public class GroceryList {
         int position = finedItem(item);
         if (position >= 0){
             groceryList.remove(position);
-            System.out.println(item + "was deleted");
+            System.out.println(item + " was deleted");
         }else {
             System.out.println("Item is not in the list");
         }
@@ -72,8 +72,6 @@ public class GroceryList {
         groceryList.clear();
         System.out.println("All items in the list are deleted");
     }
-
-
     //Returning items index
     private int finedItem (String searchItem) {
         return groceryList.indexOf(searchItem);
@@ -83,6 +81,5 @@ public class GroceryList {
     //Check if the item is valid - no number before item name
     private boolean checkIfValid(String item){                      // gives back index of the list
         return Pattern.matches("[a-zA-Z]+[0-9a-zA-Z]", item);
-
     }
 }
