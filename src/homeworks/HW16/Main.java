@@ -1,4 +1,7 @@
+/*
 package homeworks.HW16;
+
+//import oop.CarHW16;
 
 import java.util.Scanner;
 
@@ -16,9 +19,15 @@ public class Main {
         int passengers = scanner.nextInt();
 
         //Create Vehicle object
-        Vehicle vehicle = new Vehicle(fuel, fuelUsage, passengers);
-        System.out.println("fuel * 100) / fuelUsage - maxDistance: " + vehicle.maxDistance());
+        Vehicle vehicle = new Vehicle(fuel, fuelUsage, passengers);    //object
+        System.out.printf("%.2f - Max Distance", vehicle.maxDistance());
 
-    }
+    */
+/*    System.out.println("Enter airConditioner");
+        boolean airConditioner = scanner.nextBoolean();
+        CarHW16 carHW16 = new CarHW16(fuel, fuelUsage, passengers, airConditioner);    // creating object
+        System.out.printf("%.2f - Max Distance(airConditioner) ", carHW16.maxDistance2());
+    }*//*
 
-}
+
+*/

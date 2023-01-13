@@ -1,11 +1,11 @@
 package tasks.carpet;
 
-public class Floor {               //constructor
+public class Floor {                // class
     private double length;
     private double width;
 
 
-    public Floor(double length, double width){   // class
+    public Floor(double length, double width){     //constructor
         if(length >=0){
             this.length = length;
         } else {

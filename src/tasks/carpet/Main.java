@@ -23,7 +23,7 @@ public class Main {
         //Create carpet object
         Carpet carpet = new Carpet(carpetCost);
 
-        //Create Calculator object ant pass Floor and Carpet objects as input
+        //Create Calculator object and pass Floor and Carpet objects as input
 
         Calculator calculator = new Calculator(floor,carpet);
 
